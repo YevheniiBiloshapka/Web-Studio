@@ -1,0 +1,81 @@
+.team {
+  background: #f5f4fa;
+}
+
+.team__list {
+  display: flex;
+}
+.team__card {
+  width: 270px;
+  height: 428px;
+  margin-right: 30px;
+
+  background: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+.team__foto {
+}
+.team__tumb {
+  padding: 30px 32px;
+}
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-align: center;
+
+  color: $title-color;
+  margin-bottom: 10px;
+}
+.team__job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+
+  color: $text-color;
+  margin-bottom: 16px;
+}
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+.social__item {
+  position: relative;
+  width: 44px;
+  height: 44px;
+
+  margin-right: 10px;
+  border-radius: 50%;
+
+  fill: #afb1b8;
+  background-color: $white-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background: $active-color;
+    fill: $white-color;
+  }
+}
+.social__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20px;
+  height: 20px;
+}

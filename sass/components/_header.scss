@@ -1,0 +1,127 @@
+.header{
+	border-bottom: 1px solid #ECECEC;
+	&__container{
+		display: flex;
+	}
+}
+.header__nav{
+	display: flex;
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	
+	color:$title-color;
+}
+
+
+.header__logo{
+	margin-right: 93px;
+	color:#000000;
+}
+
+.header__list {
+	display: flex;
+	// position: relative;
+	
+	
+}
+
+.header__item {
+	position: relative;
+	display: flex;
+	margin-right:50px ;
+	width: 100%;
+	height: 100%;
+
+	&:last-child{
+	margin: 0;
+	}
+}
+
+
+
+.header__link {
+	padding: 25px 0px 25px 0px;
+
+	&:hover {
+		color: $active-color;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: -1px;
+		right: 0;
+		width: 0%;
+		height: 4px;
+		background: $active-color;
+		will-change: left, width;
+		border-radius: 2px;
+		transition: left 250ms cubic-bezier(0.4, 0, 0.2, 1),
+					width 250ms cubic-bezier(0.4, 0, 0.2, 1),
+					color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	&:hover::after{
+		left: 0;
+		width: 100%;
+	}
+}
+
+.header__link--active{
+	color: $active-color;
+	
+	&::after {
+			position: absolute;
+			content: '';
+			bottom: -1px;
+			left: 0;
+	
+			height: 4px;
+			width: 100%;
+			background: $active-color;
+			border-radius: 2px;
+		}
+}
+
+// Контакты
+.contact {
+	display: flex;
+	margin-left:auto ;
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	
+	color: $text-color;
+
+}
+
+.contact__item {
+	margin-right: 30px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+				color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover{
+		color: $active-color;
+		fill: $active-color;
+	}
+	&:last-child{
+		margin: 0;
+	}
+}
+
+.contact__link {}
+
+.link-icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	fill: inherit;
+	vertical-align: middle;
+}
