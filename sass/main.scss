@@ -1,7 +1,7 @@
 // utils
 @import 'utils/reset';
 @import 'utils/variables';
-@import 'components/common';
+@import 'utils/base';
 @import 'components/section';
 @import 'components/container';
 
@@ -23,15 +23,15 @@
 @import 'components/team';
 @import 'components/client';
 @import 'components/footer';
-// @import 'components/modal';
+@import 'components/modal';
 // @import 'components/filters';
 // @import 'components/project';
 
 
-//  @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
 	
-//  }
+ }
  
-//  @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1200px) {
 	
-//  }
+ }
