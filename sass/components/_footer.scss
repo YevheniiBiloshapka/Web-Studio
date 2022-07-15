@@ -6,7 +6,7 @@
 }
 
 .footer__address {
-  display: block;
+//   display: block;
 
   text-align: center;
   font-weight: 400;
@@ -33,7 +33,7 @@
 
 // social
 .footer__social {
-  display: block;
+//   display: block;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -69,7 +69,7 @@
 }
 
 .footer__input {
-  width: 450px;
+  width: 100%;
   padding: 15px 16px;
   margin-bottom: 20px;
 
@@ -101,6 +101,8 @@
   .footer__field-box {
   }
   .footer__input {
+	width: 450px;
+
   }
   .footer__address {
     display: inline-block;

@@ -14,8 +14,9 @@
   }
 }
 .team__card {
-  width: 450px;
-  height: 622px;
+  max-width: 100%;
+  height: auto;
+  
 
   margin-bottom: 30px;
   background: $white-color;
@@ -43,8 +44,10 @@
 }
 
 .team__foto {
-  width: 450px;
-  height: 460px;
+  width: 100%;
+  height: auto;
+
+
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 374px;

@@ -13,9 +13,10 @@
 
 // меню
 @import 'components/logo';
-@import 'components/header';
-
+// @import 'components/header';
+@import 'components/head';
 // мейн
+
 
 @import 'components/hero';
 @import 'components/benefits';
@@ -28,10 +29,3 @@
 // @import 'components/project';
 
 
- @media screen and (min-width: 768px) {
-	
- }
- 
- @media screen and (min-width: 1200px) {
-	
- }
