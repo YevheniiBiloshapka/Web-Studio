@@ -1,12 +1,22 @@
 .project__list {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+	grid-template-columns: repeat(2, 1fr);
+	
+  }
+  @media screen and (min-width: 1200px) {
+	grid-template-columns: repeat(3, 1fr);
+	
+  }
 }
 .project__item {
   display: block;
-  width: 370px;
-  height: 404px;
-  margin: 0 30px 30px 0;
+  width: 100%;
+  height: auto;
+//   margin: 0 30px 30px 0;
 
   background: $white-color;
   transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,9 +42,14 @@
 
 .project__link-container {
   position: relative;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
+}
+
+.project__img{
+	width: 100%;
+	height: auto;
 }
 //animate
 .project__description--animate {

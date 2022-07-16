@@ -1,12 +1,18 @@
 .filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap:15px 8px;
+  margin-bottom: 40px;
+
+@media screen and (min-width: 768px) {
+	margin-bottom: 50px;
+	justify-content: center;
+}
 }
 .filter__item {
   display: block;
-  margin-right: 8px;
 }
+
 .filter__button {
   padding: 6px 22px;
   font-weight: 500;
