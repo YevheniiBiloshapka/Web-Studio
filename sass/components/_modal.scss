@@ -25,7 +25,7 @@
 .modal {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
   width: 100%;
   height: auto;
 
@@ -44,6 +44,7 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) {
+    padding: 40px;
     width: 450px;
     height: 609px;
   }
@@ -202,7 +203,7 @@
 .checkbox:checked + .form__checkbox-icon {
   border-color: transparent;
   background-color: #2965ff;
-  background-image: url(../images/svg/icon_checked.svg);
+  background-image: url(../../images/svg/icon_checked.svg);
   background-size: contain;
   background-origin: border-box;
 }
