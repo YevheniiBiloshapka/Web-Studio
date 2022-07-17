@@ -1331,6 +1331,12 @@ body.modal-open {
   }
 }
 
+.project__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .project__item {
   display: block;
   width: 100%;
@@ -1393,6 +1399,7 @@ body.modal-open {
 }
 
 .project__tumb {
+  flex-grow: 1;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
