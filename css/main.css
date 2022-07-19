@@ -1162,6 +1162,9 @@ body.modal-open {
   font-size: 14px;
   resize: none;
 }
+.form__field:focus-within .form__label {
+  color: #2196f3;
+}
 
 .form__label {
   font-weight: 400;

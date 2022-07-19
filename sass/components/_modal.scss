@@ -116,7 +116,11 @@
     font-size: 14px;
     resize: none;
   }
+  &:focus-within .form__label{
+color: $active-color;
 }
+}
+
 .form__label {
   font-weight: 400;
   font-size: 12px;
@@ -155,8 +159,10 @@
   }
 }
 
+
 .form__box-input {
   position: relative;
+  
 }
 
 .form__icon {
@@ -170,6 +176,8 @@
 
   fill: $title-color;
 }
+
+
 
 //chekbox
 .form__checkbox {
