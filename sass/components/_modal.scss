@@ -3,6 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
+
   overflow-y: scroll;
   width: 100%;
   height: 100%;
@@ -10,6 +12,7 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
   &.is-hidden {
     pointer-events: none;
@@ -21,6 +24,9 @@
   transform: translate(-50%, -50%) scale(0.2);
   opacity: 0;
 }
+
+
+
 
 .modal {
   display: flex;
@@ -116,9 +122,9 @@
     font-size: 14px;
     resize: none;
   }
-  &:focus-within .form__label{
-color: $active-color;
-}
+  &:focus-within .form__label {
+    color: $active-color;
+  }
 }
 
 .form__label {
@@ -159,10 +165,8 @@ color: $active-color;
   }
 }
 
-
 .form__box-input {
   position: relative;
-  
 }
 
 .form__icon {
@@ -177,9 +181,8 @@ color: $active-color;
   fill: $title-color;
 }
 
-
-
 //chekbox
+
 .form__checkbox {
   display: flex;
   align-items: center;
@@ -191,6 +194,7 @@ color: $active-color;
 
   color: $text-color;
   margin-bottom: 26px;
+  margin-top: 10px;
 }
 .checkbox {
   display: inline-block;

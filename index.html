@@ -11,6 +11,7 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 	<link rel="stylesheet" href="./css/main.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<!-- ? header -->
@@ -79,12 +80,12 @@
 </section>
 
 	<!--? benefits -->
-<section class="section">
+<section class="section" >
 	<div class="benefits container">
 		<h2 class="visually-title" >Особенности</h2>
 		<ul class="benefits__list">
 
-			<li class="benefits__item">
+			<li class="benefits__item" data-aos="zoom-in">
 				<div class="benefits__box">
 					<svg class="benefits__icon"> 
 						<use  href="./images/sprite.svg#icon-antenna-1" width="70" height="70" ></use> 
@@ -94,7 +95,7 @@
 				<p class="benefits__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
 			</li>
 
-			<li class="benefits__item">
+			<li class="benefits__item" data-aos="zoom-in">
 				<div class="benefits__box">
 					<svg class="benefits__icon">
 						<use href="./images/sprite.svg#icon-clock-1" width="70" height="70"></use>
@@ -104,7 +105,7 @@
 				<p class="benefits__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 			</li>
 
-			<li class="benefits__item">
+			<li class="benefits__item" data-aos="zoom-in">
 				<div class="benefits__box">
 					<svg class="benefits__icon">
 					<use href="./images/sprite.svg#icon-diagram-1" width="70" height="70"></use>
@@ -114,7 +115,7 @@
 				<p class="benefits__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
 			</li>
 
-			<li class="benefits__item">
+			<li class="benefits__item" data-aos="zoom-in">
 				<div class="benefits__box">
 					<svg class="benefits__icon">
 					<use href="./images/sprite.svg#icon-astronaut-1" width="70" height="70"></use>
@@ -135,17 +136,20 @@
 		<h2 class="section-title ">Чем мы занимаемся</h2>
 
 		<ul class="development__list ">
-			<li class="development__item">
+			<li class="development__item" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
 				<img class="img" src="./images/img.jpg" width="370" height="294" alt="Блок схема">
 				<h3 class="development__text">Десктопные приложения</h3>
 			</li>
 
-			<li class="development__item">
+			<li class="development__item" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
 				<img src="./images/img-1.jpg" width="370" height="294" alt="Мобильные приложение">
 				<h3 class="development__text">Мобильные приложения</h3>
 			</li>
 			
-			<li class="development__item">
+			<li class="development__item" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
 				<img src="./images/img-2.jpg" width="370" height="294" alt="Планшет">
 				<h3 class="development__text">Дизайнерские решения</h3>
 			</li>
@@ -162,7 +166,9 @@
 
 		<ul class="team__list">
 		<!-- card 1 -->
-			<li class="team__card">
+			<li class="team__card" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
 				
 				<img class="team__foto" src="./images/img-3.jpg" width="270" height="260" alt="фото">
@@ -211,7 +217,9 @@
 				</div>
 			</li>
 			<!-- card 2 -->
-			<li class="team__card">
+			<li class="team__card" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
 				<img class="team__foto" src="./images/img-4.jpg" width="270" height="260" alt="фото">
 
@@ -258,7 +266,9 @@
 						</div>
 			</li>
 			<!-- card 3 -->
-			<li class="team__card">
+			<li class="team__card" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
 				<img class="team__foto" src="./images/img-5.jpg" width="270" height="260" alt="фото">
 
@@ -305,7 +315,9 @@
 				</div>
 			</li>
 			<!-- card 4 -->
-			<li class="team__card">
+			<li class="team__card" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
 
 				<img class="team__foto" src="./images/img-6.jpg" width="270" height="260" alt="фото">
 
@@ -356,11 +368,11 @@
 </div>
 </section>
 <!-- ? clien  -->
-<section class="section">
+<section class="section" >
 	<div class="container">
 
 		<h2 class="section-title ">Постоянные клиенты</h2>
-		<ul class="client__list">
+		<ul class="client__list" data-aos="zoom-in">
 
 			<li class="client__logo">
 				<a class="client__link"">
@@ -492,7 +504,7 @@
 
 
 <!-- ! Modal window -->
-<div class="blackdrop is-hidden "data-modal  >
+<div class="blackdrop is-hidden flip-scale-down-hor"data-modal  >
 	<!--  добавить вверх -->
 	<div class="modal">
 		<!-- Close button -->
@@ -561,8 +573,12 @@
 		</form>
 	</div>
 </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
