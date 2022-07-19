@@ -1172,8 +1172,8 @@ body.modal-open {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
-  display: inline-block;
-  margin-bottom: 2px;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .form__input {
