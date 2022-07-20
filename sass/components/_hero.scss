@@ -10,10 +10,21 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/heroimg.jpg);
+    url(../images/hero-img/header-img-desktop@1x-min.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url("../images/hero-img/header-img-desktop@2x-min.jpg");
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -23,7 +34,6 @@
 }
 
 .hero__text {
-  
   margin: 0 auto;
 
   @media screen and (min-width: 1200px) {
@@ -45,13 +55,13 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.61;
-	width: 360px;
-	margin: 0 auto;
-	margin-bottom: 30px;
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.3;
-	width: 696px;
+    width: 696px;
   }
 }
