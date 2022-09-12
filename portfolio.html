@@ -109,32 +109,32 @@
           <h1 class="visually-title">Проекты</h1>
           <!-- ! filter  -->
           <ul class="filter__list">
-            <li class="filter__item">
-              <button class="filter__button filter__button--active">Все</button>
+            <li class="filter__item"  >
+              <button class="filter__button filter__button--active" data-id="all">Все</button>
             </li>
-            <li class="filter__item">
-              <button class="filter__button">Веб-сайты</button>
+            <li class="filter__item" >
+              <button class="filter__button" data-id="website">Веб-сайты</button>
             </li>
-            <li class="filter__item">
-              <button class="filter__button">Приложения</button>
+            <li class="filter__item" >
+              <button class="filter__button" data-id="apps">Приложения</button>
             </li>
-            <li class="filter__item">
-              <button class="filter__button">Дизайн</button>
+            <li class="filter__item" >
+              <button class="filter__button" data-id="desing">Дизайн</button>
             </li>
-            <li class="filter__item">
-              <button class="filter__button">Маркетинг</button>
+            <li class="filter__item" >
+              <button class="filter__button" data-id="marketing">Маркетинг</button>
             </li>
           </ul>
           <!--! project  -->
           <ul
-            class="project__list"
+            class="project__list "
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
             <!-- -------------------------------card 01  -->
             <li
-              class="project__item"
+              class="project__item website"
               data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -174,7 +174,7 @@
             </li>
             <!-- -------------------------------card 02 -->
             <li
-              class="project__item"
+              class="project__item desing"
               data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -216,7 +216,7 @@
             </li>
             <!-- ------------------------------ card 03 -->
             <li
-              class="project__item"
+              class="project__item apps"
               data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -256,7 +256,7 @@
             </li>
             <!-- -------------------------------card 04 -->
             <li
-              class="project__item"
+              class="project__item marketing"
               data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -296,7 +296,7 @@
             </li>
             <!-- -------------------------------card 05 -->
             <li
-              class="project__item"
+              class="project__item apps"
               data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -336,7 +336,7 @@
             </li>
             <!-- -------------------------------card 06 -->
             <li
-              class="project__item"
+              class="project__item website"
               data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -376,7 +376,7 @@
             </li>
             <!-- -------------------------------card 07 -->
             <li
-              class="project__item"
+              class="project__item design"
               data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -416,7 +416,7 @@
             </li>
             <!-- -------------------------------card 08 -->
             <li
-              class="project__item"
+              class="project__item marketing"
               data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -456,7 +456,7 @@
             </li>
             <!-- -------------------------------card 09 -->
             <li
-              class="project__item"
+              class="project__item apps"
               data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -589,6 +589,7 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/menu.js"></script>
+	<script src="./js/filter.js"></script>
     <script>
       AOS.init();
     </script>
